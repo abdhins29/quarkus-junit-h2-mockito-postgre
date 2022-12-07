@@ -65,7 +65,7 @@ public class MovieController {
     }
 
     @PUT
-    @Path("{id}")
+    @Path("update/{id}")
     @Transactional
     public Response updateById(@PathParam("id") Long id, Movie movie) {
         return movieRepository
@@ -79,7 +79,7 @@ public class MovieController {
     }
 
     @DELETE
-    @Path("{id}")
+    @Path("delete/{id}")
     @Transactional
     public Response deleteById(@PathParam("id") Long id) {
         boolean deleted = movieRepository.deleteById(id);

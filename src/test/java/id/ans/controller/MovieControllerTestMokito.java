@@ -1,7 +1,6 @@
 package id.ans.controller;
 
 import id.ans.DTO.Movie;
-import id.ans.controller.MovieController;
 import id.ans.repository.MovieRepository;
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.test.junit.QuarkusTest;
@@ -20,7 +19,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @QuarkusTest
-public class MovieControllerTest {
+public class MovieControllerTestMokito {
     @InjectMock
     MovieRepository movieRepository;
     @Inject

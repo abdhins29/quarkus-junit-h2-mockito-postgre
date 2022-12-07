@@ -1,4 +1,4 @@
-package id.ans;
+package id.ans.controller;
 
 import id.ans.DTO.Movie;
 import id.ans.controller.MovieController;
